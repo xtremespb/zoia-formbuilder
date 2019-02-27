@@ -1,0 +1,58 @@
+{
+  "name": "zoia-formbuilder",
+  "version": "1.0.3",
+  "description": "Form Builder Component for React",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf lib || rm -rf lib",
+    "build": "webpack --mode production",
+    "prepublishOnly": "npm run clean && npm run build",
+    "build-dev": "webpack --mode development"
+  },
+  "keywords": [
+    "react",
+    "form",
+    "formbuilder",
+    "validation"
+  ],
+  "author": "Michael Matveev <xtreme@rh1.ru> (re-hash.ru)",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/plugin-proposal-class-properties": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "rimraf": "^2.6.3",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3",
+    "prop-types": "^15.7.2",
+    "css-loader": "^2.1.0",
+    "terser-webpack-plugin": "^1.2.3"
+  },
+  "files": [
+    "lib/",
+    "index.js"
+  ],
+  "dependencies": {
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xtremespb/zoia-formbuilder"
+  },
+  "babel": {
+    "presets": [
+      "@babel/env",
+      "@babel/react"
+    ],
+    "plugins": [
+      "@babel/proposal-class-properties"
+    ]
+  }
+}
